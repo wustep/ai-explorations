@@ -48,3 +48,14 @@ https://www.the-numbers.com/movie/budgets/all
 
 I'm giving the market an extra year to resolve post-movie-release date to give all of the worldwide gross earnings time to roll in."}
 ```
+
+### [Will AI pass the Turing test by 2029 Jan 1?](https://manifold.markets/dreev/will-ai-pass-the-turing-test-by-202)
+```
+{prompt: "Will AI pass the Turing test by 2029 Jan 1?", closing_date: "2029", description: "This is based on the inaugural longbets.org bet. I think Kapor will win and Kurzweil will lose, i.e., that a computer will not pass [what Kurzweil calls a valid] Turing test by 2029.
+
+((Bayesian) Update: But I admit the probability has jumped up recently!)
+
+See also https://www.metaculus.com/questions/3648/longbets-series-by-2029-will-a-computer-have-passed-the-turing-test/ 
+
+Real-money version for anyone confident that Kurzweil's side has a good chance: https://biatob.com/p/11788533128982732233 (updated link with new odds offered)"}
+```
