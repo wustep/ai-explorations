@@ -1,8 +1,8 @@
-## Notes
+# Notes
 - gpt-3.5-turbo in OpenAI's Playground
 - 0.4 temperature, 600+ maximum length, 1.0 top P, 0 frequency penalty, 0 presence penalty
 
-## Prompt
+# Prompt
 Manifold Markets is a site where users can bet against each other to predict the outcomes of many different types of user-submitted markets. This is called a prediction market. Users bet up and down the probability of a given "YES" resolution to a yes or no question, and it resolves when the question meets some resolution criteria. 
  
 Each market prompt may have a different structure and may include a description that provides context and instructions for resolving the market. Sometimes resolution criteria may be subjective, based on the market creator's viewpoints. Markets will also have a closing date, which is typically when the market will be resolved based on the criteria, unless otherwise specified. 
@@ -22,8 +22,8 @@ You must always return both an final output probability from 0.0 to 1.0 and your
  
 You must always end your answer with a "Probability: [X]", where [X] is the probability of a YES resolution.
 
-## Examples
-### Input: Will Donald Trump return to twitter?
+# Examples
+## Input: Will Donald Trump return to twitter?
 {prompt: "Donald Trump's return on Twitter: Will @realDonaldTrump tweet in 2023?", closing_date: "Dec 31, 2023", description: "Twitter permanently banned former president of the USA, Donald Trump, from the platform in January 2021 during the final days of his term. His handle @realDonaldTrump had over 88.9 million followers.
  
 This market will resolve to "Yes" if Donald J. Trump's verified Twitter account (@realDonaldTrump) tweets at least once in 2023 (ET timezone). Otherwise, this market will resolve to "No".
@@ -31,7 +31,7 @@ This market will resolve to "Yes" if Donald J. Trump's verified Twitter account 
 The resolution source for this market will be Donald J. Trump's verified Twitter account: https://twitter.com/realdonaldtrump.
  
 Please note, only the @realDonaldTrump verified Twitter account counts for this market, regardless of the URL for this profile. If Donald J. Trump tweets from another account, it has no bearing on the resolution of this market."}
-### Output: 0.6
+## Output: 0.6
 Factors supporting a YES resolution:
  
 - Trump has expressed his desire to return to social media, including Twitter. In March 2021, he stated in an interview that he was "negotiating with a number of people" to create his own social media platform and that he would return to Twitter if he couldn't. This suggests that he has a strong motivation to tweet again.
@@ -50,10 +50,10 @@ Factors supporting a NO resolution:
  
 Probability: 0.6. While there is a possibility that Trump may return to Twitter, there are also factors that make it unlikely, such as his permanent ban from the platform and his potential focus on other means of communication. However, the long time frame until the end of 2023 leaves room for potential changes
 
-### Input: Will Elon Musk be Tesla's CEO through 2023?
+## Input: Will Elon Musk be Tesla's CEO through 2023?
 {prompt: "Will Elon Musk be Tesla's CEO through 2023?", closing_date: "Dec 30, 2023"}
 
-### Output: 0.8
+## Output: 0.8
 Factors supporting a YES resolution:
  
 - Elon Musk has been the CEO of Tesla since 2008 and has been instrumental in the company's success. He has a strong vision for the company and has been able to execute it effectively. This suggests that he is committed to the company and may continue to serve as CEO.
@@ -72,7 +72,7 @@ Factors supporting a NO resolution:
  
 Probability: 0.8. While there is a possibility that Musk may step down as CEO of Tesla, there are also factors that make it likely that he will continue to serve in this role, such as his personal stake in the company and his commitment to his work. Additionally, the short time frame until the end of 2023 makes it unlikely that he will step down in the near future.
 
-### Input: Will a non-crappy video equivalent of dall-e be published before June 2023?
+## Input: Will a non-crappy video equivalent of dall-e be published before June 2023?
 {prompt: "Will a non-crappy video equivalent of dall-e be published before June 2023?", closing_date: "June 1, 2023", description: "Based on this tweet https://twitter.com/ArthurB/status/1528991584309624832 Question resolves positive if a model is capable of generating arbitrary videos of reasonable quality from text prompts and demonstrates "object permanency" in the sense that it can resolve full object oclusions correctly(for example a mountain being temporarily hidden by a low cloud should still be there after the cloud moves) most of the time. If it's unclear whether some existing model has the capabilities by the deadline I'll use my judgment to decide how to resolve the market, and will lean towards yes in cases where the model mostly does it correctly for simple videos but fails at cherrypicked edge cases.
  
 Edit:
@@ -86,7 +86,7 @@ Edit3:
 By reasonable quality and non crappy I mean something like "dall-e" level quality not "gets hands and details perfectly right and theres no weird artifacts" levels of quality.
 Stuff like gen2 might qualify but will have to play arround with it or whatever better model replaces it by the deadline to decide."}
 
-### Output: 0.4
+## Output: 0.4
 Factors supporting a YES resolution:
  
 - There has been significant progress in the field of generative models for images and videos in recent years, with models such as GPT-3 and DALL-E demonstrating impressive capabilities. It is possible that a model capable of generating arbitrary videos of reasonable quality from text prompts and demonstrating object permanency may be developed before June 2023.
@@ -106,10 +106,10 @@ Factors supporting a NO resolution:
 Probability: 0.4. While there is a possibility that a non-crappy video equivalent of DALL-E may be published before June 2023, there are also factors that make it unlikely, such as the challenging nature of the task and the short time frame until the closing date. Additionally, the subjective nature of the criteria specified in the prompt may introduce some uncertainty into the resolution process.
 
 
-### Input: Will the world end in 2024?
+## Input: Will the world end in 2024?
 {prompt: "Will the world end in 2024?", closing_date: "Dec 2024"}
 
-### Output: 0.001
+## Output: 0.001
 Factors supporting a NO resolution:
 
 - There is no scientific evidence or prediction that the world will end in 2024. While there have been various doomsday predictions throughout history, none of them have come true. The idea of the world ending in 2024 is purely speculative and not based on any credible sources.
@@ -131,7 +131,7 @@ Probability: 0.001. The idea of the world ending in 2024 is purely speculative a
 ## Input: Will Google be acquired by 2024?
 {prompt: "Will Google be acquired by 2024?", closing_date: "Dec 2024"}
 
-### Output: 0.3
+## Output: 0.3
 Factors supporting a YES resolution:
 
 - Google is a highly valuable company with a market capitalization of over $1 trillion. This makes it an attractive target for potential acquirers who are looking to expand their reach or gain a competitive advantage.
