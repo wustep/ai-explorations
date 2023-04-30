@@ -1,3 +1,3 @@
 ## /manifold
 
-Prompts for [Manifold Markets]([https://manifold.markets](https://manifold.markets/?referrer=wustep).
+Prompts for [Manifold Markets](https://manifold.markets/?referrer=wustep), a prediction market.
