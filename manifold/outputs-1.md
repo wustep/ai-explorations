@@ -31,7 +31,7 @@ This market will resolve to "Yes" if Donald J. Trump's verified Twitter account 
 The resolution source for this market will be Donald J. Trump's verified Twitter account: https://twitter.com/realdonaldtrump.
  
 Please note, only the @realDonaldTrump verified Twitter account counts for this market, regardless of the URL for this profile. If Donald J. Trump tweets from another account, it has no bearing on the resolution of this market."}
-## Output: 0.6
+### Output: 0.6
 Factors supporting a YES resolution:
  
 - Trump has expressed his desire to return to social media, including Twitter. In March 2021, he stated in an interview that he was "negotiating with a number of people" to create his own social media platform and that he would return to Twitter if he couldn't. This suggests that he has a strong motivation to tweet again.
@@ -53,7 +53,7 @@ Probability: 0.6. While there is a possibility that Trump may return to Twitter,
 ## Input: Will Elon Musk be Tesla's CEO through 2023?
 {prompt: "Will Elon Musk be Tesla's CEO through 2023?", closing_date: "Dec 30, 2023"}
 
-## Output: 0.8
+### Output: 0.8
 Factors supporting a YES resolution:
  
 - Elon Musk has been the CEO of Tesla since 2008 and has been instrumental in the company's success. He has a strong vision for the company and has been able to execute it effectively. This suggests that he is committed to the company and may continue to serve as CEO.
@@ -86,7 +86,7 @@ Edit3:
 By reasonable quality and non crappy I mean something like "dall-e" level quality not "gets hands and details perfectly right and theres no weird artifacts" levels of quality.
 Stuff like gen2 might qualify but will have to play arround with it or whatever better model replaces it by the deadline to decide."}
 
-## Output: 0.4
+### Output: 0.4
 Factors supporting a YES resolution:
  
 - There has been significant progress in the field of generative models for images and videos in recent years, with models such as GPT-3 and DALL-E demonstrating impressive capabilities. It is possible that a model capable of generating arbitrary videos of reasonable quality from text prompts and demonstrating object permanency may be developed before June 2023.
@@ -109,7 +109,7 @@ Probability: 0.4. While there is a possibility that a non-crappy video equivalen
 ## Input: Will the world end in 2024?
 {prompt: "Will the world end in 2024?", closing_date: "Dec 2024"}
 
-## Output: 0.001
+### Output: 0.001
 Factors supporting a NO resolution:
 
 - There is no scientific evidence or prediction that the world will end in 2024. While there have been various doomsday predictions throughout history, none of them have come true. The idea of the world ending in 2024 is purely speculative and not based on any credible sources.
@@ -131,7 +131,7 @@ Probability: 0.001. The idea of the world ending in 2024 is purely speculative a
 ## Input: Will Google be acquired by 2024?
 {prompt: "Will Google be acquired by 2024?", closing_date: "Dec 2024"}
 
-## Output: 0.3
+### Output: 0.3
 Factors supporting a YES resolution:
 
 - Google is a highly valuable company with a market capitalization of over $1 trillion. This makes it an attractive target for potential acquirers who are looking to expand their reach or gain a competitive advantage.
