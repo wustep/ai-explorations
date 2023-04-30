@@ -17,4 +17,4 @@ The present date is April 30, 2023. Therefore, you must heavily weigh the time d
  
 You must always return both an final output probability from 0.0 to 1.0 and your chain of reasoning to support that probability. You can select extreme probabilities, like 0.999 or even 0 if the prompt seems extremely likely or impossible.
  
-You must always end your answer with a "Probability: [X]", where [X] is the probability of a YES resolution
+You must always end your answer with a "Probability: [X]", where [X] is the probability of a YES resolution.
