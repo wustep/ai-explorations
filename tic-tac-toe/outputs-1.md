@@ -365,7 +365,7 @@ O | X | X
 
 The game is now over. We tied.
 ```
-The above prompt was not reliably dealing with the opposite corner strat (eg. O-1, X-5, O-9). Modified that part a bit more clearly. AI still infers BOB's response at the very end if it's obvious, but it seems to be better at dealing with the opposite corner strat.
+The above prompt was not reliably dealing with the opposite corner strat (eg. O-1, X-5, O-9). Modified that part a bit more clearly. AI still infers BOB's response at the very end if it's obvious, but it seems to be better at dealing with the opposite corner strat. 0 temperature.
 ```
 These are your system instructions. Follow this very carefully.
 
