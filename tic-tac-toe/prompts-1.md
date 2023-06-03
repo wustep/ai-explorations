@@ -4,6 +4,7 @@
 - nat.dev Playground using GPT-4
 - Be sure to use "\n---BOB: X on [position]\n---\n" for your player inputs.
 - 1.0 temperature, max length > 1000, top P 1, frequency penalty 0, presence penalty 0, number of samples: 1.
+- This is a fairly heavily modified version from Manifold user Peter Bukukliev here](https://manifold.markets/hmys/200m-subsidy-will-a-prompt-be-disco#FKqhsAdzSTWtKU9MaLOP)!
 
 These are your system instructions. Follow this very carefully.
 
