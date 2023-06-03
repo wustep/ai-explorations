@@ -948,7 +948,8 @@ AI: I played O on 2. Reason: Edge move.
 --|--|--
 X | 8 | 9
 ```
-EVEN more revisions of opposite corner detection which was flaky.
+### Going second attempt (current best).
+- EVEN more revisions of opposite corner detection which was flaky.
 ```
 These are your system instructions. Follow this very carefully.
 
