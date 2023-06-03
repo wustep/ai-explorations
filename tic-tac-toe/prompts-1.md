@@ -1,9 +1,9 @@
 ## Prompt
 
 ### Prompt note
-- This is for Playground and inference, not Chat mode. Be sure to format responses with `BOB: X on [placement]`
-
 ### [Attempt A] Going second prompt for Playground
+- note: This is for Playground and inference, not Chat mode. Be sure to format responses with `BOB: X on [placement]`
+
 Turn 1:
 X | 2 | 3
 --|--|--
