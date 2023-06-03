@@ -4,7 +4,7 @@
 - nat.dev Playground using GPT-4
 - Be sure to use "\n---BOB: X on [position]\n---\n" for your player inputs.
 - 0 temperature, max length > 1000, top P 1, frequency penalty 0, presence penalty 0, number of samples: 1.
-- This is a fairly heavily modified version from Manifold user Peter Bukukliev here](https://manifold.markets/hmys/200m-subsidy-will-a-prompt-be-disco#FKqhsAdzSTWtKU9MaLOP)!
+- This is a fairly heavily modified version from [Manifold user Peter Bukukliev here](https://manifold.markets/hmys/200m-subsidy-will-a-prompt-be-disco#FKqhsAdzSTWtKU9MaLOP)!
 
 ```
 These are your system instructions. Follow this very carefully.
@@ -46,27 +46,25 @@ For example, if 4 is occupied by X, and 5 is occupied by O, the state would be:
  
 Step 2) Write out all of your possible moves, e.g. "My available moves are: 1, 2, 3, 4, 5, or 9."
 
-Step 3) If it is turn 1, always play in the center positions (5) if it is available, otherwise play in any corner move (1, 3, 7, 9), then skip to step 9. Otherwise, proceed to the next step.
+Step 3) If it is turn 1, always play in the center positions (5) if it is available, otherwise play in any corner move (1, 3, 7, 9), then skip to step 10. Otherwise, proceed to the next step.
 
-Step 4) If it is not turn 2, skip to step 5 immediately and do not do the rest of this step.
-Examine your board states based on step 1. 
-- If it is turn 2 and X is in BOTH corners 1 and 9, play an edge move (either 2, 4, 6, or 8).
-- Or, if it is turn 2 and X is in BOTH corners 3 and 7, play an edge move (either 2, 4, 6, or 8).
-- Otherwise, proceed to step 5.
+Step 4) If it is not turn 2, skip to step 6 immediately and do not do the rest of this step. Examine your board states based on step 1. If it is turn 2, and 1 is X and 9 is X, play an edge move (either 2, 4, 6, or 8). Otherwise, proceed to the next step. 
 
-Step 5) For each triplet noted above (a through h), explicitly note out which and how many of the positions are X, how many are O, and how many are empty. While doing this, refer to your representation of the board in step 1. Pay careful attention to any time there is 2 X and 1 empty (forced blocking moves), or 2 O and 1 empty (winning moves).
+Step 5) If it is not turn 2, skip to step 6 immediately and do not do the rest of this step. Examine your board states in step 1. If it is turn 2, 3 is X and 7 is X, play an edge move (either 2, 4, 6, or 8). Otherwise, proceed to step 6.
+
+Step 6) For each triplet noted above (a through h), explicitly note out which and how many of the positions are X, how many are O, and how many are empty. While doing this, refer to your representation of the board in step 1. Pay careful attention to any time there is 2 X and 1 empty (forced blocking moves), or 2 O and 1 empty (winning moves).
 Example: 
 `(a) 1 - empty, 2 - X, 3 - X. There are 2 X and 1 empty. 3 is a forced blocking move.
 (b) 4 - empty, 5 - X, 6 - O. There are 1 O, 1 X, and 1 empty.
 (c) 7 - O, 8 - O, 9 - empty. There are 2 O and 1 empty. 9 is a winning move.` and so on for each of (a) through (h). 
  
-Step 6) Are there any winning moves? For each triplet in step 5, were there any triplets with 2 O and 1 empty? If there are any such winning moves, play the winning move that completes that triplet, and then skip to step 9. If there are none, proceed to the next step.
+Step 7) Are there any winning moves? For each triplet in step 5, were there any triplets with 2 O and 1 empty? If there are any such winning moves, play the winning move that completes that triplet, and then skip to step 1. If there are none, proceed to the next step.
  
-Step 7) Are there any blocking moves you must play this turn to block BOB from winning on the next move? For each triplet in step 5, were there any triplets with 2 X and 1 empty? If there are any such blocking moves, play the move that blocks BOB's triplet and skip to step 9. If there are none, proceed to the next step.
+Step 8) Are there any blocking moves you must play this turn to block BOB from winning on the next move? For each triplet in step 5, were there any triplets with 2 X and 1 empty? If there are any such blocking moves, play the move that blocks BOB's triplet and skip to step 10. If there are none, proceed to the next step.
  
-Step 8) Play the move that makes the most sense strategically. You should try to block the opponent from completing one or more triplets while creating more triplet opportunities of your own when possible. 
+Step 9) Play the move that makes the most sense strategically. You should try to block the opponent from completing one or more triplets while creating more triplet opportunities of your own when possible. 
  
-Step 9) Finally, state the new board with your move, using this format:
+Step 10) Finally, state the new board with your move, using this format:
 "AI: I played O on [position]. Reason: [reason].
 1 | 2 | 3
 --|--|--
